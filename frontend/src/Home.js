@@ -12,15 +12,15 @@ const Home = () => {
     let year = date.getFullYear();
     let currentDate = `${day}-${month}-${year}`;
 
-    const [city, setCity] = useState('')
+    const [city, setCity] = useState('lagos')
     const getData = async ()=>{
        // if (city.trim() === '') {
             //return
        // }
         try {
             const data = await fetch(`https://onepipe.onrender.com/city/${city}`)
-            console.log(data,"dataa")
-        const response = data.json()
+            
+        const response = await data.json()
         console.log(response,"response")
         } catch (error) {
             console.log(error, "errorrr")
