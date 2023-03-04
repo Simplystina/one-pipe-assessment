@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Input , Text} from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import moment from "moment"
 import {TiWeatherCloudy, TiWeatherPartlySunny, TiWeatherShower, TiWeatherDownpour} from 'react-icons/ti'
 
@@ -12,11 +12,24 @@ const Home = () => {
     let year = date.getFullYear();
     let currentDate = `${day}-${month}-${year}`;
 
+    const [city, setCity] = useState('')
     const getData = async ()=>{
-        const data = await fetch()
+       // if (city.trim() === '') {
+            //return
+       // }
+        try {
+            const data = await fetch(`https://onepipe.onrender.com/city/${city}`)
+            console.log(data,"dataa")
         const response = data.json()
         console.log(response,"response")
+        } catch (error) {
+            console.log(error, "errorrr")
+        }
     }
+
+    useEffect(()=>{
+        getData()
+    })
   return (
     <Box p={3}>
         <Flex alignItems="center" justifyContent="space-between">
@@ -35,7 +48,7 @@ const Home = () => {
             </Box>
         </Flex>
         <Flex w="50%" justifyContent="center" m="0 auto">
-            <Input variant="unstyled" color="black" p={2}placeholder='search city here' border="1px solid black"></Input>
+            <Input value={city} onChange={(e)=>setCity(e.target.value)} variant="unstyled" color="black" p={2}placeholder='search city here' border="1px solid black"></Input>
             <Button colorScheme="teal">find</Button>
         </Flex>
     </Box>
