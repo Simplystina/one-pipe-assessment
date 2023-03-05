@@ -6,7 +6,7 @@ This repo contains the backend and frontend code for a very basic weather app th
 The backend was built with express, node js
 ## Setup
 * Install NodeJS
-* pull the backend branch at []()
+* pull the backend branch at [backend branch](https://github.com/Simplystina/one-pipe-assessment/tree/backend)
 * Open the folder on your local computer
 * At the terminal, run npm install to install all packages
 * create a .env file and replace the variables in the .env.example file with the correct variables
