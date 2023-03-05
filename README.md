@@ -3,11 +3,11 @@ The branch contains the description of the api for this basic weather app
 
 ## SET UP
 
-Install NodeJS
-pull this repo
-Open the folder on your local computer
-At the terminal, run npm install to install all packages
-run npm run start:dev or nodemon to start the server
+* Install NodeJS
+* pull this repo
+* Open the folder on your local computer
+* At the terminal, run npm install to install all packages
+* run npm run start:dev or nodemon to start the server
 
 ## LIVE URL
 [https://onepipe.onrender.com](https://onepipe.onrender.com)
