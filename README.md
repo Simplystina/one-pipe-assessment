@@ -21,7 +21,7 @@ The api url was deployed using render and the live link is [https://onepipe.onre
 The frontend was built with chakra ui and React JS
 
 Frontend Setup
-* Navigate to the frontend branch to view the step by step instruction for setting up the frontend
+* Navigate to the [frontend branch](https://github.com/Simplystina/one-pipe-assessment/tree/frontend) to view the step by step instruction for setting up the frontend
 
 ## LIVE URL
-The app was deployed using netlify and the live url is located at []()
+The app was deployed using netlify and the live url is located at [https://6403c99d8eee8315ae0c7389--viewcityweather.netlify.app/](https://6403c99d8eee8315ae0c7389--viewcityweather.netlify.app/)
