@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Input , Text, Spinner, Center} from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import moment from "moment"
 import {TiWeatherCloudy, TiWeatherPartlySunny, TiWeatherShower, TiWeatherDownpour} from 'react-icons/ti'
 import XMLParser from 'react-xml-parser';
@@ -63,6 +63,7 @@ const Home = () => {
     const handleChange =(e)=>{
        
         setCity(e.target.value) 
+        setDesc('')
         setError(false)
     }
   
